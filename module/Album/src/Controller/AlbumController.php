@@ -1,7 +1,9 @@
 <?php
 namespace Album\Controller;
 
+use Album\Model\AlbumTable;
 use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
 
 class AlbumController extends AbstractActionController {
 

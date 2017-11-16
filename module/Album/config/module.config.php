@@ -2,21 +2,15 @@
 namespace Album;
 
 use Zend\Router\Http\Segment;
-use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
-	'controllers' => [
-		'factories'  => [
-			Controller\AlbumController::
 
-class => InvokableFactory::class ,
-		],
-	],
+	'router'  => [
+		'routes' => [
+			'album' => [
+				'type' => Segment::
 
-	'router'          => [
-		'routes'         => [
-			'album'         => [
-				'type'         => Segment::class ,
+class ,
 				'options'      => [
 					'route'       => '/album[/:action[/:id]]',
 					'constraints' => [
